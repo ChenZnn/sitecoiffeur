@@ -100,7 +100,7 @@ export default function RendezVous() {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Prendre Rendez-vous</h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Réservez votre prochain rendez-vous en quelques clics et laissez-nous prendre soin de vous.
+            R&eacute;servez votre prochain rendez-vous en quelques clics et laissez-nous prendre soin de vous.
           </p>
         </div>
       </header>
@@ -110,15 +110,15 @@ export default function RendezVous() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h2 className="text-2xl font-bold mb-4">Réservation en ligne</h2>
+              <h2 className="text-2xl font-bold mb-4">R&eacute;servation en ligne</h2>
               <p className="text-gray-600 mb-6">
-                Utilisez notre formulaire ci-dessous pour demander un rendez-vous. Nous vous confirmerons votre réservation par email ou téléphone dans les plus brefs délais.
+                Utilisez notre formulaire ci-dessous pour demander un rendez-vous. Nous vous confirmerons votre r&eacute;servation par email ou t&eacute;l&eacute;phone dans les plus brefs d&eacute;lais.
               </p>
               <div className="flex items-center text-gray-500 mb-2">
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <p>Réponse rapide</p>
+                <p>R&eacute;ponse rapide</p>
               </div>
               <div className="flex items-center text-gray-500">
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -129,9 +129,9 @@ export default function RendezVous() {
             </div>
             
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h2 className="text-2xl font-bold mb-4">Par téléphone</h2>
+              <h2 className="text-2xl font-bold mb-4">Par t&eacute;l&eacute;phone</h2>
               <p className="text-gray-600 mb-6">
-                Vous préférez nous appeler ? Contactez-nous directement par téléphone pour prendre rendez-vous ou poser vos questions.
+                Vous pr&eacute;f&eacute;rez nous appeler ? Contactez-nous directement par t&eacute;l&eacute;phone pour prendre rendez-vous ou poser vos questions.
               </p>
               <div className="flex items-center text-gray-800 mb-4">
                 <svg className="w-6 h-6 mr-3 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -148,11 +148,11 @@ export default function RendezVous() {
       {/* Formulaire de rendez-vous */}
       <section className="py-8 px-4 mb-16">
         <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold mb-6 text-center">Formulaire de réservation</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center">Formulaire de r&eacute;servation</h2>
           
           {submitStatus === 'success' && (
             <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
-              <p>Votre demande de rendez-vous a été envoyée avec succès ! Nous vous contacterons prochainement pour confirmer.</p>
+              <p>Votre demande de rendez-vous a &eacute;t&eacute; envoy&eacute;e avec succ&egrave;s ! Nous vous contacterons prochainement pour confirmer.</p>
             </div>
           )}
           
@@ -171,7 +171,7 @@ export default function RendezVous() {
               </div>
               
               <div>
-                <label htmlFor="prenom" className="block text-gray-700 font-medium mb-2">Prénom *</label>
+                <label htmlFor="prenom" className="block text-gray-700 font-medium mb-2">Pr&eacute;nom *</label>
                 <input
                   type="text"
                   id="prenom"
@@ -197,7 +197,7 @@ export default function RendezVous() {
               </div>
               
               <div>
-                <label htmlFor="telephone" className="block text-gray-700 font-medium mb-2">Téléphone *</label>
+                <label htmlFor="telephone" className="block text-gray-700 font-medium mb-2">T&eacute;l&eacute;phone *</label>
                 <input
                   type="tel"
                   id="telephone"
@@ -210,7 +210,7 @@ export default function RendezVous() {
             </div>
             
             <div className="mb-6">
-              <label htmlFor="service" className="block text-gray-700 font-medium mb-2">Service souhaité *</label>
+              <label htmlFor="service" className="block text-gray-700 font-medium mb-2">Service souhait&eacute; *</label>
               <select
                 id="service"
                 value={service}
@@ -218,7 +218,7 @@ export default function RendezVous() {
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
                 required
               >
-                <option value="">Sélectionnez un service</option>
+                <option value="">S&eacute;lectionnez un service</option>
                 {services.map((option, index) => (
                   <option key={index} value={option}>{option}</option>
                 ))}
@@ -227,7 +227,7 @@ export default function RendezVous() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
-                <label htmlFor="date" className="block text-gray-700 font-medium mb-2">Date souhaitée *</label>
+                <label htmlFor="date" className="block text-gray-700 font-medium mb-2">Date souhait&eacute;e *</label>
                 <input
                   type="date"
                   id="date"
@@ -241,7 +241,7 @@ export default function RendezVous() {
               </div>
               
               <div>
-                <label htmlFor="heure" className="block text-gray-700 font-medium mb-2">Heure souhaitée *</label>
+                <label htmlFor="heure" className="block text-gray-700 font-medium mb-2">Heure souhait&eacute;e *</label>
                 <select
                   id="heure"
                   value={heure}
@@ -249,7 +249,7 @@ export default function RendezVous() {
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
                   required
                 >
-                  <option value="">Sélectionnez une heure</option>
+                  <option value="">S&eacute;lectionnez une heure</option>
                   {heuresDisponibles.map((heure, index) => (
                     <option key={index} value={heure}>{heure}</option>
                   ))}
@@ -265,7 +265,7 @@ export default function RendezVous() {
                 onChange={(e) => setMessage(e.target.value)}
                 rows="4"
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
-                placeholder="Précisez vos besoins ou posez-nous vos questions..."
+                placeholder="Pr&eacute;cisez vos besoins ou posez-nous vos questions..."
               ></textarea>
             </div>
             
@@ -296,7 +296,7 @@ export default function RendezVous() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Horaires d'ouverture</h3>
+              <h3 className="text-xl font-semibold mb-3">Horaires d&apos;ouverture</h3>
               <p className="text-gray-600 mb-2">Mardi au vendredi : 9h - 18h</p>
               <p className="text-gray-600">Samedi : 9h - 17h</p>
             </div>

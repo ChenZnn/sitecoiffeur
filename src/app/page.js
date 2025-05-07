@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useState } from 'react';
 import Navbar from './components/Navbar';
+import Image from 'next/image'; // Import the Image component
 
 export default function Home() {
   // Exemple de données pour les services (à remplacer par vos services réels)
@@ -59,15 +60,17 @@ export default function Home() {
       {/* Bannière avec slogan */}
       <section className="relative h-[70vh] bg-gray-800">
         <div className="absolute inset-0">
-          <img 
+          <Image 
             src="/images/salon-banner.jpg" 
             alt="Salon de coiffure" 
-            className="w-full h-full object-cover opacity-70"
+            layout="fill"
+            objectFit="cover"
+            className="opacity-70"
           />
         </div>
         <div className="relative flex flex-col items-center justify-center h-full text-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Votre Salon de Coiffure</h1>
-          <p className="text-xl md:text-2xl text-white mb-8">L'art de sublimer votre beauté naturelle</p>
+          <p className="text-xl md:text-2xl text-white mb-8">L&apos;art de sublimer votre beaut&eacute; naturelle</p>
           <Link href="/rendez-vous" className="bg-white text-gray-900 hover:bg-gray-100 py-3 px-8 rounded-full text-lg font-semibold transition-colors duration-300">
             Prendre rendez-vous
           </Link>
@@ -82,10 +85,13 @@ export default function Home() {
             {services.map((service) => (
               <div key={service.id} className="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="h-48 overflow-hidden">
-                  <img 
+                  <Image 
                     src={service.image} 
                     alt={service.nom} 
-                    className="w-full h-full object-cover"
+                    layout="responsive"
+                    width={700}
+                    height={475}
+                    className="object-cover"
                   />
                 </div>
                 <div className="p-6">
@@ -123,7 +129,7 @@ export default function Home() {
                     </svg>
                   ))}
                 </div>
-                <p className="text-gray-700 mb-3">"{avis.commentaire}"</p>
+                <p className="text-gray-700 mb-3">&quot;{avis.commentaire}&quot;</p>
                 <p className="font-medium">{avis.nom}</p>
               </div>
             ))}
@@ -134,8 +140,8 @@ export default function Home() {
       {/* CTA - Prendre rendez-vous */}
       <section className="py-16 px-4 bg-gray-900 text-white text-center">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Prêt(e) pour un nouveau look ?</h2>
-          <p className="text-xl mb-8">Prenez rendez-vous dès maintenant et laissez-nous sublimer votre beauté.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Pr&ecirc;t(e) pour un nouveau look ?</h2>
+          <p className="text-xl mb-8">Prenez rendez-vous d&egrave;s maintenant et laissez-nous sublimer votre beaut&eacute;.</p>
           <Link href="/rendez-vous" className="bg-white text-gray-900 hover:bg-gray-100 py-3 px-8 rounded-full text-lg font-semibold inline-block transition-colors duration-300">
             Prendre rendez-vous
           </Link>

@@ -72,7 +72,7 @@ export default function Prestations() {
       <header className="bg-gray-800 py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Prestations et Tarifs</h1>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto">Découvrez notre gamme complète de services et nos tarifs transparents pour sublimer votre beauté.</p>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto">D&eacute;couvrez notre gamme compl&egrave;te de services et nos tarifs transparents pour sublimer votre beaut&eacute;.</p>
         </div>
       </header>
 
@@ -103,8 +103,8 @@ export default function Prestations() {
       {/* Photos avant/après */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Avant / Après</h2>
-          <p className="text-center text-gray-600 mb-10 max-w-3xl mx-auto">Découvrez quelques-unes de nos transformations les plus spectaculaires. Nos coiffeurs experts peuvent vous aider à obtenir le look que vous désirez.</p>
+          <h2 className="text-3xl font-bold text-center mb-12">Avant / Apr&egrave;s</h2>
+          <p className="text-center text-gray-600 mb-10 max-w-3xl mx-auto">D&eacute;couvrez quelques-unes de nos transformations les plus spectaculaires. Nos coiffeurs experts peuvent vous aider &agrave; obtenir le look que vous d&eacute;sirez.</p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {avantApres.map((exemple) => (
@@ -119,10 +119,10 @@ export default function Prestations() {
                     />
                   </div>
                   <div className="relative">
-                    <div className="absolute top-2 left-2 bg-gray-900 text-white text-xs px-2 py-1 rounded">Après</div>
+                    <div className="absolute top-2 left-2 bg-gray-900 text-white text-xs px-2 py-1 rounded">Apr&egrave;s</div>
                     <img 
                       src={exemple.apres} 
-                      alt={`Après - ${exemple.titre}`} 
+                      alt={`Apr&egrave;s - ${exemple.titre}`} 
                       className="w-full h-64 object-cover"
                     />
                   </div>
@@ -140,8 +140,8 @@ export default function Prestations() {
       {/* CTA - Prendre rendez-vous */}
       <section className="py-16 px-4 bg-gray-900 text-white text-center">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Envie d'un nouveau look ?</h2>
-          <p className="text-xl mb-8">Prenez rendez-vous dès maintenant et laissez nos experts s'occuper de vous.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Envie d&apos;un nouveau look ?</h2>
+          <p className="text-xl mb-8">Prenez rendez-vous d&egrave;s maintenant et laissez nos experts s&apos;occuper de vous.</p>
           <Link href="/rendez-vous" className="bg-white text-gray-900 hover:bg-gray-100 py-3 px-8 rounded-full text-lg font-semibold inline-block transition-colors duration-300">
             Prendre rendez-vous
           </Link>

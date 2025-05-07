@@ -114,7 +114,7 @@ export default function Contact() {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h3 className="text-xl font-semibold mb-1">Horaires d'ouverture</h3>
+                    <h3 className="text-xl font-semibold mb-1">Horaires d&apos;ouverture</h3>
                     <p className="text-gray-600">Mardi - Vendredi : 9h - 18h</p>
                     <p className="text-gray-600">Samedi : 9h - 17h</p>
                     <p className="text-gray-600">Dimanche - Lundi : Fermé</p>
