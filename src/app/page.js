@@ -103,7 +103,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link href="/services" className="text-gray-900 border border-gray-900 hover:bg-gray-900 hover:text-white py-2 px-6 rounded-full text-lg font-medium transition-colors duration-300">
+            <Link href="/prestations" className="text-gray-900 border border-gray-900 hover:bg-gray-900 hover:text-white py-2 px-6 rounded-full text-lg font-medium transition-colors duration-300">
               Voir tous nos services
             </Link>
           </div>
