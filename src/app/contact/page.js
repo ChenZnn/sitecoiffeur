@@ -1,39 +1,7 @@
 "use client";
-import { useState } from 'react';
 import Navbar from '../components/Navbar';
 
 export default function Contact() {
-  // États pour le formulaire de contact
-  const [nom, setNom] = useState('');
-  const [email, setEmail] = useState('');
-  const [sujet, setSujet] = useState('');
-  const [message, setMessage] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
-
-  // Gestion de la soumission du formulaire
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulation d'envoi de formulaire (à remplacer par votre logique d'envoi réelle)
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus('success');
-      
-      // Réinitialisation du formulaire après soumission réussie
-      setNom('');
-      setEmail('');
-      setSujet('');
-      setMessage('');
-      
-      // Effacer le message de succès après 5 secondes
-      setTimeout(() => {
-        setSubmitStatus(null);
-      }, 5000);
-    }, 1500);
-  };
-
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
@@ -93,22 +61,6 @@ export default function Contact() {
                   <div className="flex-shrink-0 mt-1">
                     <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="text-xl font-semibold mb-1">Email</h3>
-                    <p className="text-gray-600">
-                      <a href="mailto:contact@votresalon.fr" className="hover:underline">contact@votresalon.fr</a>
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 mt-1">
-                    <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                       </svg>
                     </div>
@@ -157,78 +109,28 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Formulaire de contact */}
+      {/* Section Contact par téléphone */}
       <section className="py-16 px-4 bg-white">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Envoyez-nous un message</h2>
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8">Contactez-nous par téléphone</h2>
           
-          {submitStatus === 'success' && (
-            <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
-              <p>Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.</p>
-            </div>
-          )}
-          
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label htmlFor="nom" className="block text-gray-700 font-medium mb-2">Nom complet *</label>
-              <input
-                type="text"
-                id="nom"
-                value={nom}
-                onChange={(e) => setNom(e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
-                required
-              />
+          <div className="bg-gray-100 p-8 rounded-lg shadow-md">
+            <div className="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
             </div>
             
-            <div>
-              <label htmlFor="email" className="block text-gray-700 font-medium mb-2">Email *</label>
-              <input
-                type="email"
-                id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
-                required
-              />
-            </div>
+            <p className="text-xl mb-4">Pour toute question ou prise de rendez-vous :</p>
             
-            <div>
-              <label htmlFor="sujet" className="block text-gray-700 font-medium mb-2">Sujet *</label>
-              <input
-                type="text"
-                id="sujet"
-                value={sujet}
-                onChange={(e) => setSujet(e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
-                required
-              />
-            </div>
+            <a href="tel:0123456789" className="text-3xl font-bold text-gray-800 hover:text-gray-600 transition-colors">
+              01 23 45 67 89
+            </a>
             
-            <div>
-              <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Message *</label>
-              <textarea
-                id="message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                rows="6"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
-                required
-              ></textarea>
-            </div>
-            
-            <div className="text-center">
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className={`bg-gray-900 text-white py-3 px-8 rounded-full text-lg font-semibold transition-colors duration-300 ${
-                  isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:bg-gray-700'
-                }`}
-              >
-                {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
-              </button>
-            </div>
-          </form>
+            <p className="mt-6 text-gray-600">
+              Notre équipe est disponible pour vous répondre pendant nos heures d'ouverture.
+            </p>
+          </div>
         </div>
       </section>
     </div>

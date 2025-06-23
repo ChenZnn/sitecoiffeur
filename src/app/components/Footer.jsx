@@ -101,14 +101,6 @@ export default function Footer() {
                   <a href="tel:0123456789" className="hover:text-white">01 23 45 67 89</a>
                 </div>
               </li>
-              <li className="text-gray-400">
-                <div className="flex items-start">
-                  <svg className="h-5 w-5 text-gray-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                  </svg>
-                  <a href="mailto:contact@votresalon.fr" className="hover:text-white">contact@votresalon.fr</a>
-                </div>
-              </li>
             </ul>
           </div>
         </div>
