@@ -128,7 +128,7 @@ export default function Contact() {
             </a>
             
             <p className="mt-6 text-gray-600">
-              Notre équipe est disponible pour vous répondre pendant nos heures d'ouverture.
+              Notre équipe est disponible pour vous répondre pendant nos heures d&apos;ouverture.
             </p>
           </div>
         </div>
