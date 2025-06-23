@@ -7,32 +7,19 @@ export default function APropos() {
   const equipe = [
     {
       id: 1,
-      nom: "Sophie Martin",
-      poste: "Fondatrice & Coiffeuse styliste",
+      nom: "Sabrina",
+      poste: "Fondatrice & Coiffure mixte",
       bio: "Avec plus de 15 ans d&apos;expérience, Sophie a travaillé dans les plus grands salons parisiens avant de créer son propre établissement. Spécialiste des coupes tendances et des colorations naturelles.",
       image: "/images/equipe/sophie.jpg",
     },
     {
       id: 2,
-      nom: "Thomas Dubois",
-      poste: "Coiffeur & Expert coloration",
+      nom: "Gwen",
+      poste: "Coiffeuse miste et barbière",
       bio: "Passionné par les techniques de coloration innovantes, Thomas apporte sa créativité et son expertise technique pour des résultats époustouflants.",
       image: "/images/equipe/thomas.jpg",
     },
-    {
-      id: 3,
-      nom: "Julie Leroy",
-      poste: "Coiffeuse & Spécialiste coiffures événementielles",
-      bio: "Julie excelle dans l&apos;art des coiffures pour événements spéciaux. Son talent pour les chignons et les coiffures sophistiquées fait d&apos;elle la spécialiste des mariages et cérémonies.",
-      image: "/images/equipe/julie.jpg",
-    },
-    {
-      id: 4,
-      nom: "Lucas Moreau",
-      poste: "Barbier & Coiffeur homme",
-      bio: "Expert en coupes masculines et soins de la barbe, Lucas maîtrise les techniques traditionnelles tout en restant à la pointe des tendances actuelles.",
-      image: "/images/equipe/lucas.jpg",
-    },
+
   ];
 
   return (
@@ -76,7 +63,7 @@ export default function APropos() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/images/salon-interieur.jpg"
+                src="/images/salon-interieur.png"
                 alt="Intérieur du salon"
                 className="object-cover"
                 layout="fill"

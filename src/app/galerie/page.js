@@ -1,6 +1,7 @@
 "use client";
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
+import Image from 'next/image';
 
 export default function Galerie() {
   // Catégories pour les filtres
@@ -146,11 +147,13 @@ export default function Galerie() {
                 key={photo.id} 
                 className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 bg-white"
               >
-                <div className="aspect-square overflow-hidden">
-                  <img
+                <div className="aspect-square overflow-hidden relative">
+                  <Image
                     src={photo.src}
                     alt={photo.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
