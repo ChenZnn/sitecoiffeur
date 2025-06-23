@@ -7,34 +7,39 @@ export default function Prestations() {
   const categories = [
     {
       id: 1,
-      nom: "Coupes & Coiffages",
+      nom: "Coupes brushing",
       prestations: [
         { id: 1, nom: "Coupe Femme", description: "Coupe, brushing et conseils personnalisés", prix: "35€ - 45€" },
-        { id: 2, nom: "Coupe Homme", description: "Coupe tendance et finition soignée", prix: "25€ - 35€" },
-        { id: 3, nom: "Coupe Enfant (- 12 ans)", description: "Coupe adaptée aux plus jeunes", prix: "20€" },
-        { id: 4, nom: "Brushing", description: "Mise en forme et brushing", prix: "25€ - 35€" },
-        { id: 5, nom: "Coiffure événementielle", description: "Coiffure pour mariage, soirée ou événement spécial", prix: "à partir de 60€" }
+        { id: 2, nom: "Coupe Homme et barbe", description: "Coupe tendance et finition soignée", prix: "25€ - 35€" },
+        { id: 3, nom: "Coupe Enfant (- 10 ans)", description: "Coupe adaptée aux plus jeunes", prix: "15€" },
+        { id: 4, nom: "Coiffure événementielle", description: "Coiffure pour mariage, soirée ou événement spécial", prix: "Sur devis" }
       ]
     },
     {
       id: 2,
       nom: "Colorations",
       prestations: [
-        { id: 1, nom: "Coloration racines", description: "Retouche des racines", prix: "45€" },
-        { id: 2, nom: "Coloration complète", description: "Coloration sur l'ensemble de la chevelure", prix: "55€ - 75€" },
-        { id: 3, nom: "Balayage / Mèches", description: "Technique pour éclaircir ou foncer certaines mèches", prix: "65€ - 95€" },
-        { id: 4, nom: "Ombré Hair / Tie and Dye", description: "Dégradé de couleur des racines aux pointes", prix: "85€ - 120€" },
-        { id: 5, nom: "Couleur fantaisie", description: "Couleurs vives et originales", prix: "sur devis" }
+        { id: 1, nom: "Coloration", description: "Coloration sans amoniaque", prix: "31€ - 45€" },
+        { id: 2, nom: "Coloration d'oxydation", description: "Coloration sur l'ensemble de la chevelure", prix: "40€ - 55€" },
+        { id: 5, nom: "Coloration sans amoniaque", description: "Couleurs plus douce", prix: "sur devis" }
       ]
     },
     {
       id: 3,
-      nom: "Soins & Traitements",
+      nom: "Mèches",
       prestations: [
-        { id: 1, nom: "Soin profond", description: "Traitement nourrissant en profondeur", prix: "25€" },
-        { id: 2, nom: "Masque spécifique", description: "Masque adapté à votre type de cheveux", prix: "20€" },
-        { id: 3, nom: "Traitement anti-chute", description: "Soin fortifiant pour cheveux fragilisés", prix: "35€" },
-        { id: 4, nom: "Soin lissant", description: "Traitement pour discipliner les cheveux", prix: "40€ - 60€" }
+        { id: 1, nom: "Balayages", description: "Effet coup de soleil", prix: "Sur devis" },
+        { id: 2, nom: "Ombré Hair", description: "A compléter", prix: "Sur devis" },
+        { id: 5, nom: "Patines", description: "Déjaunir ou colorer", prix: "sur devis" }
+      ]
+    },
+    {
+      id: 4,
+      nom: "Permanentes (Avec ou sans amoniaque)",
+      prestations: [
+        { id: 1, nom: "Permanentes homme", description: "Tendance", prix: "45€" },
+        { id: 2, nom: "Permanentes femme cheveux court", description: "Un basique", prix: "55€ - 75€" },
+        { id: 3, nom: "Permanentes femme cheveux long", description: "Frisé ou style wavy", prix: "Sur devis" },
       ]
     }
   ];
@@ -44,16 +49,16 @@ export default function Prestations() {
     {
       id: 1,
       titre: "Transformation complète",
-      description: "Coupe courte et coloration blonde",
-      avant: "/images/avant-1.jpg",
-      apres: "/images/apres-1.jpg"
+      description: "De blonde à cuivré",
+      avant: "/images/avant-1.png",
+      apres: "/images/apres-1.png"
     },
     {
       id: 2,
       titre: "Balayage naturel",
       description: "Éclaircissement subtil pour un effet soleil",
-      avant: "/images/avant-2.jpg",
-      apres: "/images/apres-2.jpg"
+      avant: "/images/avant-2.png",
+      apres: "/images/apres-2.png"
     },
     {
       id: 3,
